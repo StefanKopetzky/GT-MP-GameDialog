@@ -5,11 +5,9 @@ API.onServerEventTrigger.connect(function (eventName, args) {
 			DialogOpen = true;
 			LeftButtonText = args[0];
 			RightButtonText = args[1];
-			//TitleText = args[2];
-			//MessageText = args[3];
+			TitleText = args[2];
+			MessageText = args[3];
 			BlockControls = args[4];
-			TitleText = "Information";
-			MessageText = "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.";
 			if (BlockControls) {
 				API.disableVehicleEnteringKeys(true);
 				API.disableAlternativeMainMenuKey(true);
